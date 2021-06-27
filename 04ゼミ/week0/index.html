@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JSSample</title>
+  </head>
+  <body>
+    <div id="display">ここに何かが表示される</div>
+    <button id="button">クリック！</button>
+    <div>こんにちは</div>
+    <script>
+      const display = document.getElementById("display")
+      const button = document.getElementById("button")
+      let count = 0
+      button.onclick = function() {
+        count = count + 1
+        display.textContent = count
+      }
+    </script>
+  </body>
+  <h1>クイズ</h1>
+  <div>僕の名前は何でしょう？</div>
+  <button id ="name">曽利竜雅</button>
+  <div id= "display"></div>
+  <script>
+    const name =document.getElementById("name")
+    const display=document.getElementById("display")
+      name.onclick= function()
+   display.textContent="正解"
+   
+
+
+  </script>
+  </body>
+</html>
