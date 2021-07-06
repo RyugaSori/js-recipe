@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>僕の趣味は何でしょう</h1>
+    <button id="karoke-button">カラオケ</button>
+    <button id="basketball-button">バスケ</button>
+    <button id="cooking-button">料理</button>
+
+    <div id="disply">解答を表示</div>
+  </body>
+  <script>
+    const karaoke = document.getElementById("karoke-button")
+    const basuke = document.getElementById("basketball-button")
+    const cooking = document.getElementById("cooking-button")
+    const disply = document.getElementById("disply")
+    karaoke.onclick = function() {
+      disply.textContent = "苦手です"
+    }
+    basuke.onclick = function() {
+      disply.textContent = "大好き"
+    }
+    cooking.onclick = function() {
+      disply.textContent = "少しなら"
+    }
+  </script>
+</html>
