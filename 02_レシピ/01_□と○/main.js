@@ -1,4 +1,4 @@
 const figure = document.getElementById("figure")
-figure.onclick = function() {
+figure.onmouseenter = function() {
   figure.classList.toggle("rounded")
 }
